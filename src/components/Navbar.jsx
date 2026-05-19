@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import logo from '../assets/logo.png';
 
 export default function Navbar() {
   // Simulasi status login (Nanti ini diganti dengan data asli dari Laravel API)
@@ -9,8 +10,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         
         {/* Logo */}
-        <div className="text-2xl font-extrabold text-teal-800 tracking-tight cursor-pointer flex items-center gap-2">
-          🏸 Lunara<span className="text-yellow-500">Sports</span>
+        <div className="flex items-center gap-2 cursor-pointer">
+          <img src={logo} alt="Lunara Sports Logo" className="h-10 w-auto" />
+          <span className="text-2xl font-extrabold text-teal-800 tracking-tight">
+            Lunara<span className="text-yellow-500">Sports</span>
+          </span>
         </div>
 
         {/* Menu Navigasi Tengah */}
